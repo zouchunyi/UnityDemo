@@ -9,17 +9,17 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_Countdown -= Time.deltaTime;
-        if (m_Countdown <= 0)
-        {
-            GameObject.Destroy(gameObject);
-        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        m_Countdown -= Time.deltaTime;
+        if (m_Countdown <= 0)
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
